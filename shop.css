@@ -159,7 +159,7 @@ nav a:focus {
     align-items: center;
     background:
         linear-gradient(120deg, rgba(16,32,61,.06), rgba(16,32,61,0) 55%),
-        radial-gradient(circle at 85% 20%, rgba(176,138,69,.18), transparent 55%),
+        radial-gradient(circle at 85% 20%, rgba(176,138,69,.18), transparent 55%),url('images/banner image.jpg')fixed,
         var(--background-color);
     position: relative;
 }
