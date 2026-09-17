@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Modestia Dux</title>
+
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <a href="#">Modestia Dux</a>
+        </div>
+
+        <div class="navbar">
+          <a href="#">home</a>
+          <a href="#categories">categories</a>
+          <a href="#">about</a>
+          <div class="cart-icon-wrap" id="cartIconBtn">
+            🛒
+            <span class="cart-count" id="cartCount">0</span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <section>
+
+        <div class="hero">
+
+          <div class="hero-content-container">
+
+            <h1>LUXURY <span>REDEFINED</span></h1>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi id
+              itaque quisquam asperiores? Odit quasi laboriosam eum, saepe
+              blanditiis quam repellendus quia sunt eos quaerat tenetur numquam
+              consequatur aut asperiores.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section> -->
+    </header>
+
+    <section>
+      <div class="items-grid-container">
+        <div class="items-grid js-items-grid">
+          <!-- content inside is declared in javascript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="categories-container">
+      <div class="categories" id="categories">
+
+        <button>clothes</button>
+        <button>jewelry</button>
+        <button>sunglasses</button>
+        <button>stationary</button>
+        <button>footwears</button>
+        <button>school essentials</button>
+        <button>daily life essentials</button>
+        <button>toys</button>
+        <button>gifts</button>
+        <button>beauty</button>
+        
+      </div>
+    </div> -->
+    <div class="feedback-container">
+      <dialog id="feedbackDialog">
+        <h2>How Do You Feel About Us?</h2>
+        <button onclick="closeFeedbackDialog()" type="button">x</button>
+        <form action="">
+          <input type="email" />
+          <input type="text" />
+        </form>
+      </dialog>
+      <button id="feedbackDialogBtn" onclick="openFeedbackDialog()">
+        Share Your Thoughts
+      </button>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+      <div class="cart-header">
+        <span>Your Cart</span>
+        <button id="closeCartBtn">✕</button>
+      </div>
+      <div class="cart-items" id="cartItemsContainer"></div>
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span>Total</span>
+          <span id="cartTotal">₹0.00</span>
+        </div>
+        <p id="cartDeliveryEstimate" class="cart-delivery-estimate"></p>
+      </div>
+    </aside>
+
+    <script defer type="module" src="scripts/shop.js"></script>
+  </body>
+</html>

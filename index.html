@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Modestia Dux</title>
+
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <a href="#">Modestia Dux</a>
+        </div>
+
+        <div class="navbar">
+          <a href="#">home</a>
+          <a href="#categories">categories</a>
+          <a href="#">about</a>
+          <div class="cart-icon-wrap" id="cartIconBtn">
+            🛒
+            <span class="cart-count" id="cartCount">0</span>
+          </div>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-content-container">
+          <p class="hero-kicker">Since the quiet pursuit of good taste</p>
+          <h1>Restraint,<br /><span>well made.</span></h1>
+          <p>
+            We keep the collection small on purpose. Every piece is chosen
+            for how it wears in, not how it photographs — built to be worn
+            for years, not seasons.
+          </p>
+          <a href="#shop" class="primary-button hero-button">Explore the Collection</a>
+        </div>
+      </section>
+    </header>
+
+    <section id="shop">
+      <div class="items-grid-container">
+        <div class="items-grid js-items-grid">
+          <!-- content inside is declared in javascript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="categories-container">
+      <div class="categories" id="categories">
+
+        <button>clothes</button>
+        <button>jewelry</button>
+        <button>sunglasses</button>
+        <button>stationary</button>
+        <button>footwears</button>
+        <button>school essentials</button>
+        <button>daily life essentials</button>
+        <button>toys</button>
+        <button>gifts</button>
+        <button>beauty</button>
+        
+      </div>
+    </div> -->
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-brand">Modestia Dux</p>
+        <p class="footer-tagline">Quietly made. Built to last.</p>
+        <p class="footer-copy">&copy; <span id="footerYear"></span> Modestia Dux. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="feedback-container">
+      <dialog id="feedbackDialog">
+        <button class="dialog-close" id="closeFeedbackBtn" type="button" aria-label="Close">✕</button>
+        <h2>How Do You Feel About Us?</h2>
+        <p class="dialog-subtext">A line or two is plenty — we read every one.</p>
+        <form id="feedbackForm">
+          <label for="feedbackEmail">Email</label>
+          <input id="feedbackEmail" type="email" placeholder="you@example.com" required />
+          <label for="feedbackMessage">Your thoughts</label>
+          <input id="feedbackMessage" type="text" placeholder="Tell us what stood out" required />
+          <button type="submit" class="primary-button">Send Feedback</button>
+        </form>
+      </dialog>
+      <button id="feedbackDialogBtn">
+        Share Your Thoughts
+      </button>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+      <div class="cart-header">
+        <span>Your Cart</span>
+        <button id="closeCartBtn">✕</button>
+      </div>
+      <div class="cart-items" id="cartItemsContainer"></div>
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span>Total</span>
+          <span id="cartTotal">₹0.00</span>
+        </div>
+        <p id="cartDeliveryEstimate" class="cart-delivery-estimate"></p>
+      </div>
+    </aside>
+
+    <script defer type="module" src="scripts/shop.js"></script>
+  </body>
+</html>
